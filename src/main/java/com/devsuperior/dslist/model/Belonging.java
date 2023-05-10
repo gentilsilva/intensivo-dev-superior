@@ -5,13 +5,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Entity(name = "Belonging")
 @Table(name = "tb_belonging")
 @NoArgsConstructor
 @Getter
-@Setter
 public class Belonging {
 
     @EmbeddedId
