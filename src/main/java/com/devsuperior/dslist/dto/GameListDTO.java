@@ -1,15 +1,12 @@
 package com.devsuperior.dslist.dto;
 
-import com.devsuperior.dslist.model.Game;
+import com.devsuperior.dslist.model.GameList;
 
 public record GameListDTO(
         Long id,
-        String title,
-        Integer year,
-        String imgUrl,
-        String shortDescription
+        String name
 ) {
-    public GameListDTO(Game game) {
-        this(game.getId(), game.getTitle(), game.getYear(), game.getImgUrl(), game.getShortDescription());
+    public GameListDTO(GameList gameList) {
+        this(gameList.getId(), gameList.getName());
     }
 }
