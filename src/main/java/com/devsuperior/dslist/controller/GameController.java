@@ -24,9 +24,4 @@ public class GameController {
         return ResponseEntity.ok(gameService.findAllGames());
     }
 
-    @GetMapping("{id}")
-    public ResponseEntity<GameDTO> findById(@PathVariable Long id) {
-        return ResponseEntity.ok(gameService.findById(id));
-    }
-
 }

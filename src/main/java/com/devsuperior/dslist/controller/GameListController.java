@@ -21,9 +21,17 @@ public class GameListController {
     @Autowired
     private GameListService gameListService;
 
+    @Autowired
+    private GameService gameService;
+
     @GetMapping
     public ResponseEntity<List<GameListDTO>> findAll() {
         return ResponseEntity.ok(gameListService.findAllGames());
+    }
+
+    @GetMapping("/{id}/games")
+    public ResponseEntity<List<GameMinDTO>> findByList(@PathVariable Long id) {
+        return ResponseEntity.ok(gameService.findByList(id));
     }
 
 }
