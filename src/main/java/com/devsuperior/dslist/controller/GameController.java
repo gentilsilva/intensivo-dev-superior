@@ -1,7 +1,7 @@
-package com.devsuperior.dslist.controllers;
+package com.devsuperior.dslist.controller;
 
-import com.devsuperior.dslist.models.dto.GameDTO;
-import com.devsuperior.dslist.services.GameService;
+import com.devsuperior.dslist.dto.GameDTO;
+import com.devsuperior.dslist.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

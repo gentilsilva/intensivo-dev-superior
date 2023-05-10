@@ -1,4 +1,4 @@
-package com.devsuperior.dslist.models;
+package com.devsuperior.dslist.model;
 
 import jakarta.persistence.*;
 import lombok.*;

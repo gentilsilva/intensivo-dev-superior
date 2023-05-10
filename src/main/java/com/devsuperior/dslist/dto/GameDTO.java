@@ -1,6 +1,6 @@
-package com.devsuperior.dslist.models.dto;
+package com.devsuperior.dslist.dto;
 
-import com.devsuperior.dslist.models.Game;
+import com.devsuperior.dslist.model.Game;
 
 public record GameDTO(
         Long id,
